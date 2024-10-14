@@ -1,0 +1,449 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="about">
+      <section class="mv">
+        <div class="inner">
+          <div class="cont_ttl">
+            <h1 class="en f_jost">About FOODIN</h1>
+            <p class="ja"><span class="f_jost">FOODIN</span>について</p>
+          </div>
+
+          <div class="cont_btnwrap">
+            <a href="" class="cont_btn">FOODIN<br>ブランドコンセプト</a>
+            <a href="" class="cont_btn">RAW CHOCOLATES<br>美味しさ・製法のこだわり</a>
+          </div>
+        </div>
+      </section>
+      <!-- /.mv -->
+
+      <section class="history">
+        <div class="inner">
+          <div class="cont_ttl">
+            <h1 class="en f_jost">HISTORY</h1>
+            <p class="ja"><span class="f_jost">FOODIN</span>のはじまり</p>
+          </div>
+
+          <ul class="about_contList">
+            <li class="about_cont onlyTxt_cont">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">better food for a better tomorrow</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">自然や体にやさしい食品の人気は世界規模で高まっています。<br><br class="sp">FOODINの創設者Lasse
+                    Jalkanen（ラッセ・ヤルカネン）は、10年以上にわたりフィンランドでより自然や体にやさしい食文化を開発し、その実現に向けて取り組んできました。</p>
+                  <p class="cont_txt">私たちは、フィンランドで最も充実した健康食品の生産者および製造業者の 1
+                    つがどのようにして繁栄を始めたのか、そしてどのようにしてより良い食文化を発展させ続けるのかに光を当てながら、FOODIN のストーリーを皆さんと共有したいと思います。</p>
+                </dd>
+              </dl>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont reverse">
+              <p class="about_img"><img src="/assets/img/about/history_img01.jpg" alt=""></p>
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">食の根源</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINの物語は、創業者Lasse Jalkanen（ラッセ・ヤルカネン）が栄養を通じて、自身の健康と身体パフォーマンスを向上させることに興味を持った10年以上前に始まります。</p>
+                  <p class="cont_txt">当時のフィンランドでは適切な製品が入手できなかったため、世界中から探して持ち帰らなければなりませんでした。</p>
+                  <p class="cont_txt">ラッセは自分自身の健康やパフォーマンスに興味を持ち始める一方で、食べ物や食材の起源にもますます興味を持つようになり、ブラジルのアマゾンにある地元の小規模農家を初めて訪れた際、食品産業の多大な影響と重要性を発見しました。</p>
+                  <p class="cont_txt">「それはもはや、食べ物や栄養がどのように私の体に栄養を与えるかということだけではなく、熱帯雨林の人々が生産する食材を買うだけで、彼らの生活にどれだけ影響を与えることができるかということでもありました」とラッセは回想します。</p>
+                  <p class="cont_txt">勤勉で心優しい農民たちを、生産できるものはすべて買い取って支援したいという気持ちが、ラッセの心の中に残っています。</p>
+                  <p class="cont_txt">FOODINの「Sharing Happiness」という考えは、ブランドが誕生する前から強く存在していたことは明らかです。</p>
+                </dd>
+              </dl>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont">
+              <p class="about_img"><img src="/assets/img/about/history_img02.jpg" alt=""></p>
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">食の物語</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">2013 年、ブランドとして FOODINが設立されたとき、ラッセはウェルネス製品に焦点を当てた自身のオンライン ストアを持っていたほか、同業界の他の企業でいくつかの異なる進行中のプロジェクトを運営していました。</p>
+                  <p class="cont_txt">ラッセは、新しいアイデアやパートナーシップを求めて、小規模な家族農家から壮大な国際見本市やイベントまで、可能な限りいつでもどこでも世界中を旅してノウハウを開発しました。</p>
+                  <p class="cont_txt">Foodin の 2 番目のオーナーで起業家である Maria Jalkanen（マリア・ヤルカネン） は、2015 年にこの物語に加わりました。</p>
+                  <p class="cont_txt">ラッセにとって、マリアとの出会いは、それをさらにレベルアップさせ、FOODIN の中核となる使命を具体化する機会となりました。</p>
+                  <p class="cont_txt">同じ分野での経験があったマリアとラッセは、今後のFOODINの開発に対する共通の情熱と関心を共有しました。</p>
+                  <p class="cont_txt">FOODINに焦点を当てることで、ラッセもマリアも、自分たちにとって重要な問題、つまり農家から消費者までの食品生産のバリュー チェーンに影響を与え、目的のあるビジネスを行うことができるようになります。</p>
+                  <p class="cont_txt">FOODINの生産および倉庫では現在50 名をはるかに超える従業員が働いており、FOODINの継続的な成長に伴い、チームは今後も成長し続けるでしょう。</p>
+                  <p class="cont_txt">人は、故郷ユヴァスキュラで働くことが最も重要だと考えています。</p>
+                  <p class="cont_txt">ラッセとマリアは、いつか自分たちの子供たち、イーメリとリリヤがフーディンの物語を引き継ぐことを夢見ています。</p>
+                  <p class="cont_txt">一緒に働くことで、夫婦は多くのものを得ることができました。そして、会社が成長するにつれて、これからも与え続けるでしょう。</p>
+                </dd>
+              </dl>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont reverse">
+              <p class="about_img"><img src="/assets/img/about/history_img03.jpg" alt=""></p>
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">製品開発と自社生産が事業の核</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINの強みは、独自の製品開発と生産という強いプロ意識にあります。 FOODINの製品は、お客様が何を望んでいるのか、そして私たちがどのような製品を使いたいのかに基づいて開発されています。</p>
+                  <p class="cont_txt">長年にわたる栄養学の専門家であるヤッコ・ハルメトーヤ氏は、ラッセ氏と数年間にわたって製品開発に協力してきました。</p>
+                  <p class="cont_txt">地元の開発と製品生産により、最終結果が期待通りになることが保証され、ユヴァスキュラでの雇用機会が創出されます。</p>
+                  <p class="cont_txt">ラッセとヤッコは生チョコレートに特に情熱を持っており、そのためチョコレートは FOODINの中核であり、特別な注目を集めています。</p>
+                  <p class="cont_txt">当社のローチョコレート製品の生産だけでも、Vaajakoski工場ではさらに多くのフルタイムの雇用が生まれます。</p>
+                  <p class="cont_txt">自己生産には課題もありますが、FOODINではそれを脅威ではなく機会として捉えています。</p>
+                  <p class="cont_txt">自分たちでモノを作ることで、お客様の些細な要望にも応え、アイデアにインスピレーションを受ける自由と可能性が生まれます。</p>
+                </dd>
+              </dl>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont">
+              <p class="about_img">
+                <img src="/assets/img/about/history_img04.jpg" alt="">
+                <img src="/assets/img/about/history_img05.jpg" alt="" class="pc">
+              </p>
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">試練と失敗から勝利へ</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINがフィンランドを代表する食品メーカーになったのも、過去の教訓や、苦労して学んできたからです。</p>
+                  <p class="cont_txt">数年前、勢いと興奮が常識を覆し、ローフード熱に駆られたラッセは、ココナッツウォーターを手作業で瓶詰めするつもりで、ココナッツの入った容器をエルサルバドルからフィンランドに運びました。</p>
+                  <p class="cont_txt">ココナッツの賞味期限の短さはその過程で考慮されておらず、この致命的な間違いに気づいた後、大量の腐ったココナッツが直接バイオ廃棄物の分別に送られました。</p>
+                  <p class="cont_txt">私たちは失敗から学び、FOODINはより多くの知識とノウハウを持ったパートナーを見つけることにしました。</p>
+                  <p class="cont_txt">数年かかりましたが、ベトナムで適切なココナッツウォーターのパートナーが見つかりました。</p>
+                  <p class="cont_txt">現在、フーディンのココナッツ ウォーターは森林で育った有機ココナッツから瓶詰めされています。</p>
+                  <p class="cont_txt">森林農法により、ココヤシの木の間に他の植物が生育することが可能になり、生物多様性が維持され、農家が自活するための複数の方法が得られました。</p>
+                </dd>
+              </dl>
+              <p class="about_img sp">
+                <img src="/assets/img/about/history_img05.jpg" alt="">
+              </p>
+            </li>
+            <!--  -->
+            <li class="about_cont onlyTxt_cont">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">イノベーションと顧客の声に耳を傾ける</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINの最も明白な強みの 1 つは、Vaajakoski工場で製造された独自の Stone Ground製品です。</p>
+                  <p class="cont_txt">本格的でおいしい生チョコレート製品は、数千年も遡る伝統的な石臼で粉砕されています。</p>
+                  <p class="cont_txt">FOODINを愛してくれるお客様は、多くの新しく素晴らしいアイデアや要望を当社に提供し、さらに当社の製品開発チームは常に世界中から新しい製品やアイデアを検索しています。</p>
+                </dd>
+              </dl>
+            </li>
+            <!--  -->
+            <li class="about_cont onlyTxt_cont">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">食べ物は成長し、発展します</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt"> 私たちの目標は、より良い食文化を実現し、促進することです。<br class="pc"><br class="pc">すべての人により良い選択をして、より良い気持ちになる機会を提供したいと考えています。<br class="pc"><br class="pc">地球上のどこにいても、食べ物は私たちの生活の重要な部分です。</p>
+                  <p class="cont_txt">だからこそ、私たちは食品業界の一員として、お客様、農家、環境の幸福など、重要なことに影響を与えるために全力を尽くしています。</p>
+                  <p class="cont_txt">食卓をより良い毎日のための食品で満たすこと。<br class="pc"><br class="pc">それが私たちにとって「幸せを分かち合う」ということです。</p>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /.history -->
+
+
+      <section class="commitment">
+        <div class="commitment_mv">
+          <div class="cont_ttl">
+            <h1 class="en f_jost">Commitment</h1>
+            <p class="ja"><span class="f_jost">FOODIN</span>のこだわり</p>
+          </div>
+        </div>
+
+        <div class="inner">
+          <ul class="about_contList">
+            <li class="about_cont img_cont">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">より良い食文化を選択し、促進する</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODIN（フーディン）は2013年にフィンランドで創業された、首都ヘルシンキから300km北上した中部の都市「ユヴァスキュラ」に拠点を置く食品メーカーです。創業者のLasse Jalkanen(ラッセ ヤルカネン)が食を通じて自身や家族の健康と身体能力を向上させることに興味を持ち創業したのがFOODINです。</p>
+                </dd>
+              </dl>
+              <p class="about_img"><img src="/assets/img/about/commitment_img01.jpg" alt=""></p>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont reverse">
+              <dl class="about_txtBox">
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINの徹底的にこだわった製品づくりは原料選びから始まります。より良い、安心できる原料を求めて世界に目を向け、必要があれば家族経営レベルの小規模農家とも契約しています。FOODINのこだわりは、フィンランドのスーパー等で見かけないことはないくらいシェアが広がった今も変わりません。</p>
+                </dd>
+              </dl>
+              <p class="about_img"><img src="/assets/img/about/commitment_img02.jpg" alt=""></p>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">フィンランド国内製造へのこだわり</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">FOODINの製品は専門家からなる委員会の審査を受け、MADE IN FINLANDの正式認証を取得しています。Made in Finland認証を受けた製品は「フィンランドで作られた高品質な製品やサービス」を指します。</p>
+                </dd>
+              </dl>
+              <p class="about_img logoImg"><img src="/assets/img/common/logo_tehtySuomessa.png" alt="TEHTY SUOMESSA MADE IN FINLAND"></p>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont reverse">
+              <dl class="about_txtBox">
+                <dt class="cont_miniTtl">FOODIN社のチョコレートについて</dt>
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">・素材<br>FOODIN社のチョコレートにはリオロ種のカカオ豆が使用されています。 アマゾンの熱帯雨林の奥地、小規模な家族経営の農家を直接視察し契約。その家族は持続可能かつ倫理的なガイドラインに従ってカカオ豆を栽培しています。</p>
+                  <p class="cont_txt">リオロ種のカカオ豆は細長くもふっくらとした形で、フレーバービーンズとも呼ばれるほどの独特かつ 繊細な香りを持ちます。クリオロ種は病気や虫に弱いため、栽培がなかなか難しく、生産量もカカオ全体の約3%程度に留まります。</p>
+                </dd>
+              </dl>
+              <p class="about_img"><img src="/assets/img/about/commitment_img03.jpg" alt=""></p>
+            </li>
+            <!--  -->
+            <li class="about_cont img_cont">
+              <dl class="about_txtBox">
+                <dd class="cont_txtBox">
+                  <p class="cont_txt">・製法<br>FOODINのローチョコレートは伝統的な石臼挽き法で作られています。 巨大な石臼で2 ～3日間かけて材料を挽き、ベルベットのようなチョコレートの塊にします。 42度以下の低温で仕上げることで、カカオ豆の特性が最終工程後も残ります。また、 石臼で優しく挽くことで、FOODINのチョコレートの特徴である心地よい食感と柔らかさを生み出します。</p>
+                  <p class="cont_txt">チョコレートの塊が完成したら、石臼で挽く職人のサンナとチョコレート職人のマラが、 味と食感を徹底的に検査します。塊が均一で絹のように柔らかく、味が完璧であることを確認し、テンパリング（熱処理）や冷却などいくつかの工程を経てFOODINのこだわりが詰まったチョコレートが完成します。FOODINのローチョコレートはビーガン対応で 、保存料や添加物は一切使用していません。</p>
+                </dd>
+              </dl>
+              <p class="about_img"><img src="/assets/img/about/commitment_img04.jpg" alt=""></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /.history -->
+
+</div>
+
+<style>
+
+/*-------------------------------------------
+  about
+/*-------------------------------------------*/
+@media screen and (min-width: 769px) {
+  .about footer {
+    border-top: 1px solid #3e3a39;
+    background-color: #fff;
+  }
+}
+.about .mv {
+  height: 745px;
+  padding-top: 246px;
+  color: #fff;
+  background-image: url(/assets/img/about/mv_img_pc.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .about .mv {
+    height: 189.3333333333vw;
+    padding-top: 48vw;
+    background-image: url(/assets/img/about/mv_img_sp.jpg);
+  }
+}
+.about .mv .cont_ttl {
+  margin-bottom: 52px;
+  text-align: center;
+}
+.about .mv .cont_btn {
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 768px) {
+  .about .mv .cont_btn {
+    margin-bottom: 6vw;
+  }
+  .about .mv .cont_btn:last-child {
+    margin-bottom: 0;
+  }
+}
+.about .mv .cont_btn::before {
+  border-color: #fff;
+}
+.about li.about_cont {
+  margin-bottom: 143px;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont {
+    margin-bottom: 10.6666666667vw;
+  }
+}
+.about li.about_cont:last-child {
+  margin-bottom: 0;
+}
+.about li.about_cont.onlyTxt_cont .about_txtBox {
+  max-width: 620px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont.onlyTxt_cont .about_txtBox {
+    max-width: 100%;
+  }
+}
+.about li.about_cont.img_cont {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont.img_cont {
+    display: block;
+  }
+}
+.about li.about_cont.img_cont .about_txtBox {
+  max-width: 492px;
+  width: 46.85714286%;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont.img_cont .about_txtBox {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.about li.about_cont.img_cont.reverse {
+  flex-direction: row-reverse;
+}
+.about li.about_cont .about_img {
+  max-width: 500px;
+  width: 47.61904762%;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont .about_img {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 11.4666666667vw;
+  }
+}
+.about li.about_cont .about_img img + img {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about li.about_cont .about_img.sp {
+    margin-top: 10.6666666667vw;
+  }
+}
+.about .cont_miniTtl {
+  margin-bottom: 32px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about .cont_miniTtl {
+    margin-bottom: 7.3333333333vw;
+    text-align: left;
+  }
+}
+.about .cont_txtBox .cont_txt {
+  margin-bottom: 27px;
+}
+@media screen and (max-width: 768px) {
+  .about .cont_txtBox .cont_txt {
+    margin-bottom: 5.3333333333vw;
+  }
+}
+.about .cont_txtBox .cont_txt:last-child {
+  margin-bottom: 0;
+}
+.about .cont_txt {
+  letter-spacing: 0.08em;
+}
+.about .history {
+  padding: 102px 0 133px;
+}
+@media screen and (max-width: 768px) {
+  .about .history {
+    padding: 15.2vw 0 20vw;
+  }
+}
+.about .history .cont_ttl {
+  margin-bottom: 82px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about .history .cont_ttl {
+    margin-bottom: 14.6666666667vw;
+  }
+}
+.about .commitment .commitment_mv {
+  display: flex;
+  height: 600px;
+  background-image: url(/assets/img/about/commitment_bg_pc.jpg);
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .about .commitment .commitment_mv {
+    height: 146.6666666667vw;
+    background-image: url(/assets/img/about/commitment_bg_sp.jpg);
+  }
+}
+.about .commitment .cont_ttl {
+  color: #fff;
+  text-align: center;
+}
+.about .commitment ul.about_contList {
+  padding: 110px 0 250px;
+}
+@media screen and (max-width: 768px) {
+  .about .commitment ul.about_contList {
+    padding: 12.8vw 0 13.3333333333vw;
+  }
+}
+.about .commitment li.about_cont .about_img {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .about .commitment li.about_cont .about_img {
+    margin-top: 12vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .commitment li.about_cont .about_img.logoImg {
+    text-align: center;
+  }
+}
+.about .commitment li.about_cont .about_img.logoImg img {
+  max-width: 224px;
+  margin-left: 120px;
+}
+@media screen and (max-width: 768px) {
+  .about .commitment li.about_cont .about_img.logoImg img {
+    max-width: 29.8666666667vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
+</style>
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
